@@ -29,7 +29,7 @@ def valid_move?(board, index)
       return true
     end
   end
-  if position_taken?(board, index) && index.between?(1, 9)
+  if position_taken?(board, index) || index.between?(1, 9)
     return false
   else
     return true
