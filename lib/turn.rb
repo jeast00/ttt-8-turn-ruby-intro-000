@@ -30,7 +30,7 @@ def valid_move?(board, index)
     end
   end
 
-  if !position_taken?(board, index) || !board[index]
+  if position_taken?(board, index) || board[index]
     return false
   else
     return true
