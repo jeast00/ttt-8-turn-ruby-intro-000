@@ -41,7 +41,7 @@ def turn(board)
   input = gets.strip
   input_to_index(input)
   if input
-    move(board, index, value)
+    move(board, input, value)
   else
     puts "That number is invalid or has already been taken."
     turn(board)
