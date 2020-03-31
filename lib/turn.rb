@@ -28,10 +28,4 @@ def valid_move?(board, index)
     else
       return true
   end
-
-  if position_taken? || !(board[index])
-    return false
-  else
-    return true
-  end
 end
