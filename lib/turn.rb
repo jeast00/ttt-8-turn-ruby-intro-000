@@ -46,4 +46,5 @@ def turn(board)
   else
     puts "That number is invalid or has already been taken."
     turn(board)
+  end
 end
