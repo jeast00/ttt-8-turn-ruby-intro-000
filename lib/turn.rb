@@ -22,10 +22,16 @@ def move(board, index, value = "X")
 end
 
 def valid_move?(board, index)
-  if board[index] == " " || board[index] == "" || board[index] == nil
+  def position_taken?(board, index)
+    if(board[index] == " " || board[index] == "" || board[index] == nil)
+      return false
+    else
+      return true
+  end
+
+  if(position_taken?(board, index) || !(board[index]))
     return false
   else
     return true
   end
-
 end
