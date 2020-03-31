@@ -22,7 +22,7 @@ def move(board, index, value = "X")
 end
 
 def valid_move?(board, index)
-  if board[index].between?(1, 9)
+  if board[index].between?(1, 9).to_i
     return true
   else
     return false
