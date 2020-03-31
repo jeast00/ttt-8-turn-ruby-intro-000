@@ -24,6 +24,12 @@ def valid_move?(board, index)
     else
       return true
   end
+
+  if !(position_taken(board, index)) && !(board[index])
+    return false
+  else
+    return true
+  end
 end
 
 def move(board, index, value = "X")
